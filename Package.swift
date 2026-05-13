@@ -26,8 +26,8 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/alrikai/swift-certificates.git", branch: "main"),
-        .package(url: "https://github.com/apple/swift-asn1.git", .upToNextMajor(from: "1.0.0")),
-        .package(url: "https://github.com/apple/swift-crypto.git", .upToNextMajor(from: "3.0.0"))
+        .package(url: "https://github.com/alrikai/swift-asn1.git", branch: "main"),
+        .package(url: "https://github.com/alrikai/swift-crypto.git", branch: "main")
     ],
     targets: [
         .binaryTarget(
