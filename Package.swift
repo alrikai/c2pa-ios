@@ -24,10 +24,6 @@ let package = Package(
             targets: ["C2PA"])
     ],
     dependencies: [
-        .package(
-            url: "https://github.com/alrikai/swift-certificates.git", branch: "main"),
-        .package(url: "https://github.com/alrikai/swift-asn1.git", branch: "main"),
-        .package(url: "https://github.com/alrikai/swift-crypto.git", branch: "main")
     ],
     targets: [
         .binaryTarget(
@@ -39,9 +35,6 @@ let package = Package(
             name: "C2PA",
             dependencies: [
                 "C2PAC",
-                .product(name: "X509", package: "swift-certificates"),
-                .product(name: "SwiftASN1", package: "swift-asn1"),
-                .product(name: "Crypto", package: "swift-crypto")
             ],
             path: "Library/Sources"
         )
